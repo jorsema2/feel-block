@@ -3,7 +3,7 @@
 }
 
 body {
-  background-color: #f9f9fe;
+  background-color: #fff;
 
   margin: 0;
 }
@@ -18,6 +18,10 @@ p {
   opacity: 1;
 }
 
+.flex-container {
+  display: flex;
+}
+
 .bold {
   font-weight: 700;
 }
@@ -25,11 +29,33 @@ p {
 .center {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .wrap {
   display: flex;
   flex-wrap: wrap;
+}
+
+.circled {
+  background-color: white;
+
+  box-shadow: 0px 0px 30px 0px #2424481a;
+
+  height: 31px;
+  width: 31px;
+
+  border-radius: 50%;
+}
+
+.underline-gray {
+  text-decoration: underline rgba(0, 0, 0, 0.1) 5px solid;
+  text-underline-offset: -3px;
+}
+
+.underline-red {
+  text-decoration: underline rgb(209, 3, 10, 0.2) 5px solid;
+  text-underline-offset: -3px;
 }
 
 .gradient-background {
@@ -123,7 +149,7 @@ p {
 
   margin-top: 22px;
 
-  color: #D1030A;
+  color: #d1030a;
 }
 
 .cta__subheading {
@@ -132,7 +158,7 @@ p {
   letter-spacing: 0px;
   text-align: left;
 
-  color: #D1030A;
+  color: #d1030a;
 }
 
 .products-list {
@@ -143,7 +169,8 @@ p {
 
   height: 140px;
 
-  margin-top: 40px;
+  margin-top: 52px;
+  margin-bottom: 35px;
 }
 
 .products-list__item {
@@ -151,4 +178,96 @@ p {
   line-height: 30px;
   letter-spacing: 0px;
   text-align: left;
+
+  margin-left: 15px;
+}
+
+.pricing {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.pricing__total {
+  font-size: 25px;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-align: left;
+
+  color: #7a7a7a;
+}
+
+.pricing__bundle {
+  font-size: 25px;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-align: left;
+
+  color: #000000;
+
+  margin-top: 12px;
+}
+
+.pricing__period {
+  font-size: 15px;
+  line-height: 15px;
+  letter-spacing: 0px;
+  text-align: left;
+
+  color: #7a7a7a;
+
+  align-self: flex-end;
+}
+
+.savings {
+  background-color: rgb(141, 145, 150, 0.1);
+
+  height: 40px;
+  width: 295px;
+
+  border-radius: 0px;
+
+  margin-top: 30px;
+}
+
+.savings__description {
+  font-size: 13px;
+  line-height: 13px;
+  letter-spacing: 2px;
+  text-align: left;
+
+  color: #7a7a7a;
+}
+
+.order {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.order__button {
+  height: 70px;
+  min-width: 280px;
+
+  background: #3eb291;
+  color: #fff;
+
+  border-radius: 110px;
+  border: none;
+
+  font-size: 20px;
+  line-height: 15px;
+  letter-spacing: 2px;
+  text-align: center;
+
+  margin: 20px;
+}
+
+.order__shipping-info {
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 2px;
+  text-align: left;
+
+  color: #acb5bd;
 }
