@@ -329,7 +329,7 @@ p {
   color: #acb5bd;
 }
 
-@media screen and (max-width: 922px) {
+@media screen and (max-width: 992px) {
   .desktop-visible {
     display: none;
   }
@@ -415,9 +415,13 @@ p {
 
   .description {
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
 
-    margin: 200px 0 0;
+    margin: 200px auto 0;
+
+    max-width: 1024px;
+    
+    transform: translateX(23px);
   }
 
   .cta {
@@ -435,6 +439,8 @@ p {
 
   .pricing {
     align-items: flex-start;
+
+    margin: 0 40px;
   }
 
   .order__button {
