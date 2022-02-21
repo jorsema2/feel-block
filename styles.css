@@ -107,6 +107,10 @@ p {
 
 .upper-box__subheading {
   height: 70px;
+  width: 88%;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .upper-box__title {
@@ -128,23 +132,21 @@ p {
 
   left: 0;
   right: 0;
-  bottom: -135px;
+  top: 300px;
 
   margin-left: auto;
   margin-right: auto;
 }
 
 .properties {
-  margin-top: 32px;
-  margin-left: 26px;
-
-  height: 54px;
+  width: 80%;
 
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: space-between;
-
-  align-self: flex-start;
+  align-items: baseline;
+  
+  margin: 32px auto 0;
 }
 
 .properties__item {
@@ -164,6 +166,10 @@ p {
   width: 40px;
 
   margin-right: 5px;
+}
+
+.properties .properties__item:first-child {
+  margin-bottom: 16px;
 }
 
 .description {
@@ -364,18 +370,21 @@ p {
 
   .properties {
     flex-direction: row;
+    align-items: center;
 
     height: 26px;
     width: 572px;
 
-    margin-top: 27px;
-    margin-left: -5px;
+    margin: 27px auto 0;
 
-    align-self: auto;
   }
 
   .properties__item svg {
     opacity: 0.5;
+  }
+
+  .properties .properties__item:first-child {
+    margin-bottom: 0;
   }
 
   .products-desktop {
