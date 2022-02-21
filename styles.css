@@ -62,9 +62,8 @@ p {
   text-underline-offset: -3px;
 }
 
-.underline-red {
-  text-decoration: underline rgb(209, 3, 10, 0.2) 5px solid;
-  text-underline-offset: -3px;
+.margin-left-35 {
+  margin-left: 35px !important;
 }
 
 .gradient-background {
@@ -122,7 +121,7 @@ p {
 
 .upper-box__products-image {
   position: absolute;
-  
+
   left: 0;
   right: 0;
   bottom: -135px;
@@ -140,6 +139,8 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  align-self: flex-start;
 }
 
 .properties__item {
@@ -195,6 +196,9 @@ p {
   text-align: left;
 
   color: #d1030a;
+
+  text-decoration: underline rgb(209, 3, 10, 0.2) 5px solid;
+  text-underline-offset: -3px;
 }
 
 .products-list {
@@ -222,6 +226,8 @@ p {
   display: flex;
   align-items: center;
   flex-direction: column;
+
+  position: relative;
 }
 
 .pricing__total {
@@ -257,6 +263,9 @@ p {
   color: #7a7a7a;
 
   align-self: flex-end;
+
+  position: absolute;
+  bottom: -18px;
 }
 
 .savings {
@@ -267,7 +276,7 @@ p {
 
   border-radius: 0px;
 
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .savings__description {
@@ -317,10 +326,9 @@ p {
 }
 
 @media screen and (max-width: 922px) {
-  
   .desktop-visible {
     display: none;
-  }  
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -328,9 +336,19 @@ p {
     display: none;
   }
 
+  .upper-box {
+    display: flex;
+  }
+
   .upper-box__heading {
     font-size: 60px;
     line-height: 40px;
+  }
+
+  .upper-box__subheading {
+    height: 70px;
+
+    margin-top: 22px;
   }
 
   .upper-box__product-names {
@@ -342,19 +360,73 @@ p {
 
   .properties {
     flex-direction: row;
+
+    height: 26px;
+    width: 572px;
+
+    margin-top: 27px;
+    margin-left: -5px;
+
+    align-self: auto;
   }
 
   .properties__item svg {
     opacity: 0.5;
   }
 
+  .products-desktop {
+    display: flex;
+
+    position: absolute;
+    top: 250px;
+  }
+
+  .product-info {
+    margin-left: 25px;
+  }
+
+  .product-info__item-name {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0px;
+    text-align: left;
+
+    color: #495057;
+  }
+
+  .product-info__item-price {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+
+    color: #7a7a7a;
+  }
+
   .description {
     flex-direction: row;
+    justify-content: center;
+
+    margin: 200px 0 0;
+  }
+
+  .cta {
+    align-items: flex-start;
   }
 
   .cta__heading {
     font-size: 35px;
     font-weight: 700;
+  }
+
+  .cta__subheading {
+    text-decoration: none;
+  }
+
+  .pricing {
+    align-items: flex-start;
   }
 
   .order__button {
