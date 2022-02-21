@@ -66,6 +66,10 @@ p {
   margin-left: 35px !important;
 }
 
+.margin-right--17 {
+  margin-right: -17px;
+}
+
 .gradient-background {
   background: linear-gradient(
     46.19deg,
@@ -379,6 +383,10 @@ p {
 
     position: absolute;
     top: 250px;
+  }
+
+  .products-desktop svg {
+    transform: translate(15px, 42px);
   }
 
   .product-info {
