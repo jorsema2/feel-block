@@ -420,12 +420,18 @@ p {
     margin: 200px auto 0;
 
     max-width: 1024px;
-    
+
     transform: translateX(23px);
   }
 
   .cta {
     align-items: flex-start;
+    justify-content: space-between;
+
+    height: 70px;
+    width: 146px;
+
+    margin-bottom: 13px;
   }
 
   .cta__heading {
@@ -439,8 +445,11 @@ p {
 
   .pricing {
     align-items: flex-start;
+    justify-content: space-between;
 
-    margin: 0 40px;
+    margin-right: 64px;
+
+    height: 62px;
   }
 
   .order__button {
