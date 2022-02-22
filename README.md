@@ -4,6 +4,8 @@ Single page that shows a bundle of three products of the company Feel.
 
 This project was made using HTML, CSS and Bootstrap.
 
+Deployed here: https://jorsema2.github.io/feel-block/
+
 ## How to install
 
 On your CLI, use "yarn install" or "npm install" to install dependencies.

@@ -397,6 +397,9 @@ p {
 
     position: absolute;
     top: 250px;
+
+    width: 1024px;
+    max-width: 90%;
   }
 
   .products-desktop svg {
@@ -433,7 +436,8 @@ p {
 
     margin: 200px auto 0;
 
-    max-width: 1024px;
+    width: 1024px;
+    max-width: 90%;
 
     transform: translateX(23px);
   }
