@@ -1,4 +1,4 @@
-# Feel slider
+# Feel block
 
 Single page that shows a bundle of three products of the company Feel.
 
